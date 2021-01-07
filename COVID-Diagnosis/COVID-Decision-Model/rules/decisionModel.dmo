@@ -23,6 +23,7 @@
                 <rule defaultRule="false" href="node_1/Provide%20Recommendations.dmt" kind="DecisionTable" name="Provide Recommendations"/>
                 <rule defaultRule="false" href="node_1/Undetermined%20diagnosis.drl" kind="BusinessRule" name="Undetermined diagnosis"/>
                 <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_1/test%20git.drl" kind="BusinessRule" name="test git"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="Identify Diagnosis" typeRef="Diagnosis"/>
