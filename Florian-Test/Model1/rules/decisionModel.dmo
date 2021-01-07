@@ -7,19 +7,20 @@
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
-    <inputData id="node_0" name="Input">
+    <inputData id="node_0" name="Customer">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="java.lang.String" collection="false" name="Input"/>
+                <output bomType="java.lang.String" collection="false" name="Customer"/>
             </initialization>
         </extensionElements>
-        <variable id="node_0_ii" name="Input" typeRef="java.lang.String"/>
+        <variable id="node_0_ii" name="Customer" typeRef="java.lang.String"/>
     </inputData>
     <decision id="node_1" name="Decision">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="java.lang.String" collection="false" name="Input"/>
+                <input bomType="java.lang.String" collection="false" name="Customer"/>
                 <output bomType="java.lang.String" collection="false" name="Decision"/>
+                <rule defaultRule="false" href="node_1/testRule.drl" kind="BusinessRule" name="testRule"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="Decision" typeRef="java.lang.String"/>
