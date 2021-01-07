@@ -1,0 +1,6 @@
+
+# Customer
+Customer#concept.label = Customer
+Customer.Customer(java.lang.String)#phrase.navigation = a new {Customer} where {0, att1}
+Customer.att1#phrase.action = set the att1 of {this} to {att1}
+Customer.att1#phrase.navigation = {att1} of {this}

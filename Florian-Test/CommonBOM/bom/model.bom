@@ -1,0 +1,20 @@
+
+
+public class Customer
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Customer"
+        property "de.generated" "true"
+{
+    public string att1
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "att1"
+                property update "true";
+    public Customer(string att1)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Customer()
+                property "dataio.default" "true";
+}
+
