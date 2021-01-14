@@ -21,6 +21,7 @@
                 <input bomType="java.lang.String" collection="false" name="Customer"/>
                 <output bomType="java.lang.String" collection="false" name="Decision"/>
                 <rule defaultRule="false" href="node_1/testRule.drl" kind="BusinessRule" name="testRule"/>
+                <rule defaultRule="false" href="node_1/test%20-%20decisiontable.dmt" kind="DecisionTable" name="test - decisiontable"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="Decision" typeRef="java.lang.String"/>

@@ -7,6 +7,13 @@
 
     <packaging>pom</packaging>
 
+    <properties>
+        <engine-compact-runtime.version>2.5.3</engine-compact-runtime.version>
+        <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
+        <ml-integration-runtime.version>6.0.12</ml-integration-runtime.version>
+        <ads-mojo.version>3.1.8</ads-mojo.version>
+        <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
+    </properties>
     <modules>
         <module>Loan Validation Data</module>
         <module>Loan Validation Decision Model</module>
@@ -19,8 +26,15 @@
                 <plugin>
                     <groupId>com.ibm.decision</groupId>
                     <artifactId>build-maven-plugin</artifactId>
-                    <version>2.3.3</version>
+                    <version>${ads-mojo.version}</version>
                     <extensions>true</extensions>
+                <dependencies>
+                        <dependency>
+                            <groupId>com.ibm.decision</groupId>
+                            <artifactId>ml-integration-runtime</artifactId>
+                            <version>${ml-integration-runtime.version}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
             </plugins>
         </pluginManagement>
