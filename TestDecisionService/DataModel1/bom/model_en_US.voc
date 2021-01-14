@@ -1,0 +1,12 @@
+
+# BRERequest
+BRERequest#concept.label = BRERequest
+BRERequest.BRERequest(java.lang.String)#phrase.navigation = a new {BRERequest} where {0, name}
+BRERequest.name#phrase.action = set the name of {this} to {name}
+BRERequest.name#phrase.navigation = {name} of {this}
+
+# BREResponse
+BREResponse#concept.label = BREResponse
+BREResponse.BREResponse(java.lang.String)#phrase.navigation = a new {BREResponse} where {0, mesage}
+BREResponse.mesage#phrase.action = set the mesage of {this} to {mesage}
+BREResponse.mesage#phrase.navigation = {mesage} of {this}
